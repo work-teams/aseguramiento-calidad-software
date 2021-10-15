@@ -38,26 +38,25 @@ public class PanelProveedores extends javax.swing.JPanel {
         jPanel2 = new javax.swing.JPanel();
         panEncabezado = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        panCuerpo = new javax.swing.JPanel();
+        panDatos = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        lblImg = new javax.swing.JLabel();
         BtnAgregar = new javax.swing.JButton();
         BtnEliminar = new javax.swing.JButton();
         BtnModificar = new javax.swing.JButton();
-        BtnBuscar = new javax.swing.JButton();
+        txtIdProveedor = new javax.swing.JTextField();
+        txtNombre = new javax.swing.JTextField();
+        txtTelefono = new javax.swing.JTextField();
+        txtDireccion = new javax.swing.JTextField();
+        panTable = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblProveedores = tblProveedores = new javax.swing.JTable(){
             public boolean isCellEditable(int rowIndex,int colIndex){
                 return false;//Disallow the editing of any cell
             }
         };
-        txtNombre = new jtextfieldround.JTextFieldRound();
-        txtIdProveedor = new jtextfieldround.JTextFieldRound();
-        txtTelefono = new jtextfieldround.JTextFieldRound();
-        txtDireccion = new jtextfieldround.JTextFieldRound();
 
         setMinimumSize(new java.awt.Dimension(1120, 690));
         setPreferredSize(new java.awt.Dimension(1120, 690));
@@ -66,15 +65,15 @@ public class PanelProveedores extends javax.swing.JPanel {
         jPanel2.setBackground(new java.awt.Color(204, 204, 204));
         jPanel2.setForeground(new java.awt.Color(255, 255, 255));
         jPanel2.setMinimumSize(new java.awt.Dimension(1120, 690));
-        jPanel2.setPreferredSize(new java.awt.Dimension(1120, 690));
+        jPanel2.setPreferredSize(new java.awt.Dimension(1150, 720));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        panEncabezado.setBackground(new java.awt.Color(44, 80, 154));
+        panEncabezado.setBackground(new java.awt.Color(3, 44, 75));
         panEncabezado.setMaximumSize(null);
         panEncabezado.setMinimumSize(new java.awt.Dimension(1120, 40));
         panEncabezado.setPreferredSize(new java.awt.Dimension(1120, 40));
 
-        jLabel1.setFont(new java.awt.Font("Roboto", 1, 36));
+        jLabel1.setFont(new java.awt.Font("Roboto", 1, 48));
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Proveedores");
 
@@ -92,39 +91,34 @@ public class PanelProveedores extends javax.swing.JPanel {
             .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING)
         );
 
-        jPanel2.add(panEncabezado, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jPanel2.add(panEncabezado, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 56));
 
-        panCuerpo.setBackground(new java.awt.Color(57, 103, 196));
-        panCuerpo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        panDatos.setBackground(new java.awt.Color(57, 103, 196));
+        panDatos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel9.setBackground(new java.awt.Color(70, 106, 124));
-        jLabel9.setFont(new java.awt.Font("Roboto", 1, 16));
+        jLabel9.setFont(new java.awt.Font("Roboto", 0, 18));
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText("ID Proveedor");
-        panCuerpo.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 48, -1, -1));
+        jLabel9.setText("ID Proveedor       :");
+        panDatos.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 72, 148, 22));
 
         jLabel11.setBackground(new java.awt.Color(70, 106, 124));
-        jLabel11.setFont(new java.awt.Font("Roboto", 1, 16));
+        jLabel11.setFont(new java.awt.Font("Roboto", 0, 18));
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setText("Nombre");
-        panCuerpo.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 95, -1, -1));
+        jLabel11.setText("Nombre               :");
+        panDatos.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 152, 137, 22));
 
         jLabel12.setBackground(new java.awt.Color(70, 106, 124));
-        jLabel12.setFont(new java.awt.Font("Roboto", 1, 16));
+        jLabel12.setFont(new java.awt.Font("Roboto", 0, 18));
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setText("Dirección");
-        panCuerpo.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 95, -1, -1));
+        jLabel12.setText("Dirección     :");
+        panDatos.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(545, 152, 113, 22));
 
         jLabel13.setBackground(new java.awt.Color(70, 106, 124));
-        jLabel13.setFont(new java.awt.Font("Roboto", 1, 16));
+        jLabel13.setFont(new java.awt.Font("Roboto", 0, 18));
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setText("Teléfono");
-        panCuerpo.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 48, 70, 19));
-
-        lblImg.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        lblImg.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        lblImg.setOpaque(true);
-        panCuerpo.add(lblImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 19, 120, 120));
+        jLabel13.setText("Teléfono      :");
+        panDatos.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(545, 72, 116, 22));
 
         BtnAgregar.setBackground(new java.awt.Color(102, 102, 102));
         BtnAgregar.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
@@ -139,7 +133,7 @@ public class PanelProveedores extends javax.swing.JPanel {
                 BtnAgregarActionPerformed(evt);
             }
         });
-        panCuerpo.add(BtnAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(982, 10, 65, 65));
+        panDatos.add(BtnAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1062, 10, 65, 65));
 
         BtnEliminar.setBackground(new java.awt.Color(102, 102, 102));
         BtnEliminar.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
@@ -155,7 +149,7 @@ public class PanelProveedores extends javax.swing.JPanel {
                 BtnEliminarActionPerformed(evt);
             }
         });
-        panCuerpo.add(BtnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 10, 65, 65));
+        panDatos.add(BtnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1062, 90, 65, 65));
 
         BtnModificar.setBackground(new java.awt.Color(102, 102, 102));
         BtnModificar.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
@@ -171,23 +165,28 @@ public class PanelProveedores extends javax.swing.JPanel {
                 BtnModificarActionPerformed(evt);
             }
         });
-        panCuerpo.add(BtnModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 79, 65, 65));
+        panDatos.add(BtnModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1062, 170, 65, 65));
 
-        BtnBuscar.setBackground(new java.awt.Color(102, 102, 102));
-        BtnBuscar.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
-        BtnBuscar.setForeground(new java.awt.Color(255, 255, 255));
-        BtnBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/buscar.png"))); // NOI18N
-        BtnBuscar.setToolTipText("");
-        BtnBuscar.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder("")));
-        BtnBuscar.setBorderPainted(false);
-        BtnBuscar.setContentAreaFilled(false);
-        BtnBuscar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        BtnBuscar.addActionListener(new java.awt.event.ActionListener() {
+        txtIdProveedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnBuscarActionPerformed(evt);
+                txtIdProveedorActionPerformed(evt);
             }
         });
-        panCuerpo.add(BtnBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(982, 79, 65, 65));
+        panDatos.add(txtIdProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 63, 350, 40));
+        panDatos.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 143, 350, 40));
+        panDatos.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(655, 63, 350, 40));
+
+        txtDireccion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtDireccionActionPerformed(evt);
+            }
+        });
+        panDatos.add(txtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(655, 143, 350, 40));
+
+        jPanel2.add(panDatos, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 56, 1150, 246));
+
+        panTable.setBackground(new java.awt.Color(57, 103, 196));
+        panTable.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         tblProveedores.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -207,33 +206,12 @@ public class PanelProveedores extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblProveedores);
 
-        panCuerpo.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 181, 1100, 440));
+        panTable.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 23, 1105, 372));
 
-        txtNombre.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        txtNombre.setFont(new java.awt.Font("Roboto", 0, 14));
-        panCuerpo.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(255, 90, 260, 27));
-
-        txtIdProveedor.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        txtIdProveedor.setFont(new java.awt.Font("Roboto", 0, 14));
-        panCuerpo.add(txtIdProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(255, 43, 260, 27));
-
-        txtTelefono.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        txtTelefono.setFont(new java.awt.Font("Roboto", 0, 14));
-        panCuerpo.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(617, 45, 300, 27));
-
-        txtDireccion.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        txtDireccion.setFont(new java.awt.Font("Roboto", 0, 14));
-        panCuerpo.add(txtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(617, 87, 300, 27));
-
-        jPanel2.add(panCuerpo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 1120, 650));
+        jPanel2.add(panTable, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 302, 1150, 418));
 
         add(jPanel2, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void BtnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnBuscarActionPerformed
-        // TODO add your handling code here:
-        miControladorProveedor.buscarProveedor();
-    }//GEN-LAST:event_BtnBuscarActionPerformed
 
     private void BtnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnModificarActionPerformed
         // TODO add your handling code here:
@@ -255,10 +233,17 @@ public class PanelProveedores extends javax.swing.JPanel {
         miControladorProveedor.cargarProveedorSeleccionado();
     }//GEN-LAST:event_tblProveedoresFocusGained
 
+    private void txtIdProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIdProveedorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtIdProveedorActionPerformed
+
+    private void txtDireccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDireccionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtDireccionActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtnAgregar;
-    private javax.swing.JButton BtnBuscar;
     private javax.swing.JButton BtnEliminar;
     private javax.swing.JButton BtnModificar;
     private javax.swing.JLabel jLabel1;
@@ -268,14 +253,14 @@ public class PanelProveedores extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JLabel lblImg;
-    private javax.swing.JPanel panCuerpo;
+    private javax.swing.JPanel panDatos;
     private javax.swing.JPanel panEncabezado;
+    private javax.swing.JPanel panTable;
     private javax.swing.JTable tblProveedores;
-    private jtextfieldround.JTextFieldRound txtDireccion;
-    public jtextfieldround.JTextFieldRound txtIdProveedor;
-    private jtextfieldround.JTextFieldRound txtNombre;
-    private jtextfieldround.JTextFieldRound txtTelefono;
+    public javax.swing.JTextField txtDireccion;
+    public javax.swing.JTextField txtIdProveedor;
+    public javax.swing.JTextField txtNombre;
+    public javax.swing.JTextField txtTelefono;
     // End of variables declaration//GEN-END:variables
 
     public void setControlador(ControladorProveedor miControladorProveedor) {
