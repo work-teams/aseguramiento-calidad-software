@@ -49,7 +49,7 @@ public class ControladorGeneral {
     // ENLACE VENTANA PRINCIPAL
     public void setVentanaPrincipal(VentanaPrincipal miVentanaPrincipal) {
         this.miVentanaPrincipal = miVentanaPrincipal;
-        this.miVentanaPrincipal.setSize(1300, 720);
+        this.miVentanaPrincipal.setSize(1300, 756);
     }
 
     // ENLACE PANEL USUARIOS

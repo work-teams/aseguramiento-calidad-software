@@ -188,6 +188,10 @@ public class PanelProveedores extends javax.swing.JPanel {
         panTable.setBackground(new java.awt.Color(57, 103, 196));
         panTable.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jScrollPane1.setMaximumSize(new java.awt.Dimension(1105, 372));
+        jScrollPane1.setMinimumSize(new java.awt.Dimension(1105, 372));
+        jScrollPane1.setPreferredSize(new java.awt.Dimension(1105, 372));
+
         tblProveedores.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
