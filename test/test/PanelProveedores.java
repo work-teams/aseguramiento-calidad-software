@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package vista;
+package test;
 
+import vista.*;
 import controlador.ControladorProveedor;
 import java.util.ArrayList;
 import javax.swing.table.DefaultTableModel;
@@ -76,7 +77,7 @@ public class PanelProveedores extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Roboto", 1, 48));
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Proveedores");
-        panEncabezado.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 0, 450, 56));
+        panEncabezado.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 0, 166, 56));
 
         jPanel2.add(panEncabezado, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 56));
 
