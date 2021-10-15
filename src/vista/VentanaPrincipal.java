@@ -66,6 +66,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         panLatBtns.setBackground(new java.awt.Color(49, 213, 223));
         panLatBtns.setForeground(new java.awt.Color(255, 255, 255));
+        panLatBtns.setMaximumSize(new java.awt.Dimension(150, 720));
         panLatBtns.setMinimumSize(new java.awt.Dimension(150, 720));
         panLatBtns.setOpaque(false);
         panLatBtns.setPreferredSize(new java.awt.Dimension(150, 720));
@@ -228,6 +229,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         });
         panLatBtns.add(btnCerrarSesion);
 
+        panelHome.setMaximumSize(new java.awt.Dimension(1150, 720));
         panelHome.setMinimumSize(new java.awt.Dimension(1150, 720));
         panelHome.setOpaque(false);
         panelHome.setPreferredSize(new java.awt.Dimension(1150, 720));

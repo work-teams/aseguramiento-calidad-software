@@ -58,8 +58,8 @@ public class PanelProveedores extends javax.swing.JPanel {
             }
         };
 
-        setMinimumSize(new java.awt.Dimension(1120, 690));
-        setPreferredSize(new java.awt.Dimension(1120, 690));
+        setMinimumSize(new java.awt.Dimension(1150, 720));
+        setPreferredSize(new java.awt.Dimension(1150, 720));
         setLayout(new java.awt.BorderLayout());
 
         jPanel2.setBackground(new java.awt.Color(204, 204, 204));
