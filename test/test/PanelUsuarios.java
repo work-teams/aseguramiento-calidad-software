@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package vista;
+package test;
 
+import vista.*;
 import controlador.ControladorUsuario;
 import java.util.ArrayList;
 import javax.swing.table.DefaultTableModel;
@@ -76,7 +77,7 @@ public class PanelUsuarios extends javax.swing.JPanel {
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Usuarios");
         jLabel1.setPreferredSize(new java.awt.Dimension(183, 44));
-        panEncabezado.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 0, 490, 56));
+        panEncabezado.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 0, 750, 56));
 
         add(panEncabezado, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 56));
 
@@ -250,7 +251,7 @@ public class PanelUsuarios extends javax.swing.JPanel {
     private javax.swing.JButton btnBuscar;
     private javax.swing.JButton btnEliminar;
     private javax.swing.JButton btnModificar;
-    public javax.swing.JComboBox<String> cboxRol;
+    private javax.swing.JComboBox<String> cboxRol;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -263,11 +264,11 @@ public class PanelUsuarios extends javax.swing.JPanel {
     private javax.swing.JPanel panEncabezado;
     private javax.swing.JPanel panTable;
     public javax.swing.JTable tblUsuarios;
-    public javax.swing.JTextField txtApellido;
-    public javax.swing.JTextField txtContrasenia;
-    public javax.swing.JTextField txtDni;
-    public javax.swing.JTextField txtNombre;
-    public javax.swing.JTextField txtUsuario;
+    private javax.swing.JTextField txtApellido;
+    private javax.swing.JTextField txtContrasenia;
+    private javax.swing.JTextField txtDni;
+    private javax.swing.JTextField txtNombre;
+    private javax.swing.JTextField txtUsuario;
     // End of variables declaration//GEN-END:variables
 
     // ENLACE CONTROLADOR
